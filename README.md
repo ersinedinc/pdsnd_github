@@ -19,7 +19,7 @@ washington.csv
 During the development Udacity's python course was very helpful.
 When I stuck on a problem, mostly I have used "Stackoverflow" posts to overcome the problem.
 
-##Prerequisites
+### Prerequisites
 The project compiled with the below python and conda versions.
 conda 4.9.2
 Python 3.9.4
