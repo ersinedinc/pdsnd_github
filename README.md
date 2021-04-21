@@ -1,17 +1,25 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+21-April-2021
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+An interactive environment where user chooses data and program calculate statistics depends on the chosen data set.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+During the development Udacity's python course was very helpful.
+When I stuck on a problem, mostly I have used "Stackoverflow" posts to overcome the problem.
 
+### Prerequisites
+The project compiled with the below python and conda versions.
+conda 4.9.2
+Python 3.9.4
