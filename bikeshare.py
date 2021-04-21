@@ -34,9 +34,9 @@ def get_filters():
 
     while True :
         cq = input('You have selected "'+city+'". Do you want to continue?(y/n)')
-        if cq == 'y':
+        if cq.lower() == 'y':
             break
-        elif  cq == 'n':
+        elif  cq.lower() == 'n':
             quit()
         else :
             print('please enter "y" or "n"')
@@ -62,9 +62,9 @@ def get_filters():
     #continue or quit : cq
     while True :
         cq = input('You have selected "'+month+'". Do you want to continue?(y/n)')
-        if cq == 'y':
+        if cq.lower() == 'y':
             break
-        elif  cq == 'n':
+        elif  cq.lower() == 'n':
             quit()
         else :
             print('please enter "y" or "n"')
@@ -91,9 +91,9 @@ def get_filters():
     day = wd.loc[day_index].iloc[0]
     while True :
         cq = input('You have selected "'+day+'". Do you want to continue?(y/n)')
-        if cq == 'y':
+        if cq.lower() == 'y':
             break
-        elif  cq == 'n':
+        elif  cq.lower() == 'n':
             quit()
         else :
             print('please enter "y" or "n"')
