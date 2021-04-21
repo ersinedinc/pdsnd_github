@@ -34,9 +34,9 @@ def get_filters():
 
     while True :
         cq = input('You have selected "'+city+'". Do you want to continue?(y/n)')
-        if cq.lower() == 'y':
+        if cq == 'y':
             break
-        elif  cq.lower() == 'n':
+        elif  cq == 'n':
             quit()
         else :
             print('please enter "y" or "n"')
@@ -62,9 +62,9 @@ def get_filters():
     #continue or quit : cq
     while True :
         cq = input('You have selected "'+month+'". Do you want to continue?(y/n)')
-        if cq.lower() == 'y':
+        if cq == 'y':
             break
-        elif  cq.lower() == 'n':
+        elif  cq == 'n':
             quit()
         else :
             print('please enter "y" or "n"')
@@ -91,9 +91,9 @@ def get_filters():
     day = wd.loc[day_index].iloc[0]
     while True :
         cq = input('You have selected "'+day+'". Do you want to continue?(y/n)')
-        if cq.lower() == 'y':
+        if cq == 'y':
             break
-        elif  cq.lower() == 'n':
+        elif  cq == 'n':
             quit()
         else :
             print('please enter "y" or "n"')
@@ -234,11 +234,11 @@ def user_stats(df):
     #used try except if there is not birth year data
     try :
         earliest_birth_date = int(df['Birth Year'].min())
-        print('\nThe earliest birth year is {} '.format(earliest_birth_date))
+        print('The oldest person who rent a bike is {} years old'.format(dt.datetime.now().year-earliest_birth_date))
         most_recent_birth_date = int(df['Birth Year'].max())
-        print('The most recent birth year  is {} '.format(most_recent_birth_date))
+        print('The youngest person who rent a bike is {} years old'.format(dt.datetime.now().year-most_recent_birth_date))
         most_common_year =  int(df['Birth Year'].mode()[0])
-        print('{} is the most common birth year'.format(most_common_year))
+        print('{} is the most common age who rented a bike'.format(dt.datetime.now().year-most_common_year))
     except :
         print('-'*20)
 
