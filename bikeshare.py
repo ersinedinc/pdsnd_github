@@ -234,11 +234,11 @@ def user_stats(df):
     #used try except if there is not birth year data
     try :
         earliest_birth_date = int(df['Birth Year'].min())
-        print('The oldest person who rent a bike is {} years old'.format(dt.datetime.now().year-earliest_birth_date))
+        print('\nThe earliest birth year is {} '.format(earliest_birth_date))
         most_recent_birth_date = int(df['Birth Year'].max())
-        print('The youngest person who rent a bike is {} years old'.format(dt.datetime.now().year-most_recent_birth_date))
+        print('The most recent birth year  is {} '.format(most_recent_birth_date))
         most_common_year =  int(df['Birth Year'].mode()[0])
-        print('{} is the most common age who rented a bike'.format(dt.datetime.now().year-most_common_year))
+        print('{} is the most common birth year'.format(most_common_year))
     except :
         print('-'*20)
 
